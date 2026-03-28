@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PetPaws - Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-left">
+        <img src="logo.png" alt="logo" class="logo" onerror="this.style.display='none'">
+        <div>
+          <div class="brand">PetPaws</div>
+          <div class="small text-muted">Your shopping cart</div>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="small">Your Cart</h2>
+      <table class="cart-table">
+        <thead>
+          <tr><th>Item</th><th>Price</th><th>Quantity</th><th>Subtotal</th></tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- script.js populates -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary small">
+        <p>Discount: <strong id="discount">$0.00</strong></p>
+        <p>Tax (15%): <strong id="tax">$0.00</strong></p>
+        <p class="total">Total: <strong id="total">$0.00</strong></p>
+      </div>
+
+      <div style="margin-top:1rem;display:flex;gap:0.6rem">
+        <button id="clearCart">Clear All</button>
+        <button onclick="location.href='checkout.html'">Check Out</button>
+        <button onclick="location.href='products.html'">Continue Shopping</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">© 2025 PetPaws</footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

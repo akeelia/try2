@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PetPaws - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-left">
+        <img src="logo.png" alt="PetPaws logo" class="logo" onerror="this.style.display='none'">
+        <div>
+          <div class="brand">PetPaws</div>
+          <div class="small text-muted">Quality supplies for your pets</div>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart <span id="cartCount" class="badge" style="background:var(--color-primary);color:white;padding:2px 7px;border-radius:999px;font-weight:700;margin-left:6px">0</span></a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Welcome to PetPaws</h2>
+          <p style="margin-bottom:1rem">Premium Care for every Paw</p>
+          <p>Your neighbourhood pet supply store — everything for dogs, cats, birds, fish & small pets.</p>
+          <div style="margin-top:1rem">
+            <a href="products.html" class="btn">Shop Now</a>
+            <a href="about.html" class="btn btn secondary" style="margin-left:0.5rem">Learn More</a>
+          </div>
+        </div>
+        <img src="hero-pets.jpg" alt="pets" style="width:280px;border-radius:10px;object-fit:cover" onerror="this.style.display='none'">
+      </section>
+
+      <section>
+        <h3 style="margin-bottom:.5rem">Featured Products</h3>
+        <div class="products-grid">
+
+          <!-- Products that are in the java file (script.js) -->
+           
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container small">© 2025 PetPaws — All rights reserved</div>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PetPaws - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-left">
+        <img src="logo.png" alt="logo" class="logo" onerror="this.style.display='none'">
+        <div>
+          <div class="brand">PetPaws</div>
+          <div class="small text-muted">Checkout</div>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 style="margin-bottom:.5rem">Order Summary</h2>
+      <section class="checkout-summary small">
+        <p>Items Total: <span id="sumItems">$0.00</span></p>
+        <p>Discount: <span id="sumDiscount">$0.00</span></p>
+        <p>Tax (15%): <span id="sumTax">$0.00</span></p>
+        <p class="total">Grand Total: <span id="sumTotal">$0.00</span></p>
+      </section>
+
+      <section style="margin-top:1rem">
+        <h3 style="margin-bottom:.5rem">Shipping Information</h3>
+        <form id="checkoutForm" class="form-page">
+          <label for="shipName">Full Name:</label>
+          <input id="shipName" type="text" required>
+
+          <label for="shipAddress">Address:</label>
+          <input id="shipAddress" type="text" required>
+
+          <label for="shipPay">Amount Being Paid:</label>
+          <input id="shipPay" type="number" required>
+
+          <div style="display:flex;gap:.6rem;margin-top:.5rem">
+            <button type="submit">Confirm</button>
+            <button type="reset" class="btn secondary">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">© 2025 PetPaws</footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
